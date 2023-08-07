@@ -1,6 +1,14 @@
+"use client"
+
+import { About } from "@/components/About"
+import { Home } from "@/components/Home"
+
 const Page = ()=> {
   return(
-    <h1>...</h1>
+    <div className="overflow-x-hidden">
+      <Home/>
+      <About/>
+    </div>
   )
 }
 
