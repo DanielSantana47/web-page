@@ -1,5 +1,3 @@
-import { useState } from "react"
-import { BsFillArrowUpCircleFill } from "react-icons/bs"
 
 export const PcMenu = ()=> {
             

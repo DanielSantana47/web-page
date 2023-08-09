@@ -3,7 +3,7 @@ import { Team } from "./team"
 
 export const About = ()=> {
     return(
-        <section id="About" className="mb-28 bg-zinc-800 text-zinc-300">
+        <section id="About" className="pb-28 bg-zinc-800 text-zinc-300">
             <div className="container mx-auto w-full h-full grid grid-cols-1 xl:grid-cols-2">
                 <div className="text-left xl:text-right px-8 md:px-32 mb-16">
                     <h3 className="font-thin text-4xl md:text-5xl mb-12">CREATIVE AND PROFESSIONAL</h3>
