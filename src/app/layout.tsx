@@ -1,5 +1,3 @@
-"use client"
-
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -8,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Web Page Template',
-  description: 'Criado por Daniel Santana',
+  description: 'created by Daniel Santana',
 }
 
 export default function RootLayout({
