@@ -2,28 +2,6 @@ import { useState } from "react"
 import { BsFillArrowUpCircleFill } from "react-icons/bs"
 
 export const PcMenu = ()=> {
-    const [opacity, setOpacity] = useState(false)
-
-
-    if (typeof window !== undefined) {
-    
-    const scrollEvent = ()=> {
-        if (window.scrollY > 0) {
-            setOpacity(true)
-        }
-        if (window.scrollY === 0) {
-                setOpacity(false)
-            }
-        }
-
-            window.addEventListener('scroll', scrollEvent)
-            
-        }
-            
-            
-        //const handleBackButton = ()=> {
-          //  window.scrollTo(0,0)
-       // }
             
             return(
         <nav className={`top-0 right-0 left-0 z-50   transition-all duration-500 hidden lg:block`}>
@@ -33,7 +11,6 @@ export const PcMenu = ()=> {
                 <a href="#Works" className="px-3 h-full flex items-center bg-transparent text-zinc-300 hover:bg-red-500 transition-all duration-150 cursor-pointer">SERVICES</a>
                 <a href="#Contact" className="px-3 h-full flex items-center bg-transparent text-zinc-300 hover:bg-red-500 transition-all duration-150 cursor-pointer">CONTACT US</a>
             </ul>
-            <div><BsFillArrowUpCircleFill className={`fixed bottom-0 right-0 m-8 z-50 text-red-500 text-3xl rounded-full ${opacity === false ? 'opacity-0': ''} transition-all duration-500`}/></div>
         </nav>
     )
 }
