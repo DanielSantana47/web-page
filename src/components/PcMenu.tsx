@@ -5,16 +5,19 @@ export const PcMenu = ()=> {
     const [opacity, setOpacity] = useState(false)
 
 
-    window.addEventListener('scroll', ()=> {
-           if (window.scrollY > 0) {
-                setOpacity(true)
-            }
-            if (window.scrollY === 0) {
+    
+    const scrollEvent = ()=> {
+        if (window.scrollY > 0) {
+            setOpacity(true)
+        }
+        if (window.scrollY === 0) {
                 setOpacity(false)
             }
-        })
+        }
 
-        const handleBackButton = ()=> {
+    window.addEventListener('scroll', scrollEvent)
+        
+    const handleBackButton = ()=> {
             window.scrollTo(0,0)
         }
     
