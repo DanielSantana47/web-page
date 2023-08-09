@@ -15,12 +15,15 @@ export const PcMenu = ()=> {
             }
         }
 
-    window.addEventListener('scroll', scrollEvent)
+        if (typeof window !== undefined) {
+            window.addEventListener('scroll', scrollEvent)
+            
+            }
         
-    const handleBackButton = ()=> {
+        
+        const handleBackButton = ()=> {
             window.scrollTo(0,0)
         }
-    
     
     return(
         <nav className={`top-0 right-0 left-0 z-50   transition-all duration-500 hidden lg:block`}>
